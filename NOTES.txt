@@ -1,0 +1,12 @@
+open doesn't work? use start chapter1.txt
+
+start will open the file outside of vscode however.
+
+not sure of solution  atm
+
+
+
+
+git commit -m "complete chapter 1"
+it is convention to use present tense, you COMPLETED chapter 1 but write complete chapter 1.
+Finish not finished etc
