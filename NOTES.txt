@@ -1,4 +1,4 @@
-open doesn't work? use start chapter1.txt
+'open' doesn't work? use 'start chapter1.txt'
 
 start will open the file outside of vscode however.
 
@@ -7,6 +7,204 @@ not sure of solution  atm
 
 
 
-git commit -m "complete chapter 1"
+'git commit -m "complete chapter 1"'
 it is convention to use present tense, you COMPLETED chapter 1 but write complete chapter 1.
 Finish not finished etc
+
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Udemy Yu Shit/day 69
+$ cd ..
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Udemy Yu Shit
+$ cd ..
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop
+$ cd Story
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story
+$ cat chapter1.txt
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story
+$ start chapter1.txt
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story
+$ git init
+Initialized empty Git repository in C:/Users/laura/OneDrive/Desktop/Story/.git/
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ ls -a
+./  ../  .git/  chapter1.txt  NOTES.txt
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        NOTES.txt
+        chapter1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ git add chapter1.txt
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   chapter1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        NOTES.txt
+
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ git commit -m "Initial Commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'laura@Lauras-PC.(none)')
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ git config --global user.email "lauracain12345@gmail.com"
+error: could not lock config file C:/Users/laura/OneDrive/Desktop/Story/C/x3a/Users/laura/.gitconfig: No such file or directory
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ git config user.email "lauracain12345@gmail.com"
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ git config user.name "Laura"
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ git commit -m "commit 1"
+[master (root-commit) 90a6c19] commit 1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 chapter1.txt
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ git log
+commit 90a6c1910ab697f55adc2fc0638517e0e4e70757 (HEAD -> master)
+Author: Laura <lauracain12345@gmail.com>
+Date:   Mon May 12 14:40:37 2025 +1000
+
+    commit 1
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ touch chapter2.txt
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ touch chapter3.txt
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ start chapter2.txt
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ start chapter3.txt
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        NOTES.txt
+        chapter2.txt
+        chapter3.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ git add chapter2.txt
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ git add chapter3.txt
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ git add .
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   NOTES.txt
+        new file:   chapter2.txt
+        new file:   chapter3.txt
+
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ git commit -m "add chapter2 chapter3, notes"
+[master 4251ee1] add chapter2 chapter3, notes
+ 3 files changed, 14 insertions(+)
+ create mode 100644 NOTES.txt
+ create mode 100644 chapter2.txt
+ create mode 100644 chapter3.txt
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ git log
+commit 4251ee15254f1cce0d858984c62b1967b0765111 (HEAD -> master)
+Author: Laura <lauracain12345@gmail.com>
+Date:   Mon May 12 14:44:46 2025 +1000
+
+    add chapter2 chapter3, notes
+
+commit 90a6c1910ab697f55adc2fc0638517e0e4e70757
+Author: Laura <lauracain12345@gmail.com>
+Date:   Mon May 12 14:40:37 2025 +1000
+
+    commit 1
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ start chapter3.txt
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   chapter3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ git diff chapter3.txt
+diff --git a/chapter3.txt b/chapter3.txt
+index 3da605d..e2f2685 100644
+--- a/chapter3.txt
++++ b/chapter3.txt
+@@ -1 +1,2 @@
+ it was the spring of hope it was the winter of despair
++ass
+\ No newline at end of file
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ git checkout chapter3.txt
+Updated 1 path from the index
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$ git diff chapter3.txt
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
+$
