@@ -208,3 +208,194 @@ $ git diff chapter3.txt
 (.venv) 
 laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Story (master)
 $
+
+---
+laura@Lauras-PC MINGW64 ~/OneDrive/Desktop/Story (main)
+$ cd Desktop
+bash: cd: Desktop: No such file or directory
+
+laura@Lauras-PC MINGW64 ~/OneDrive/Desktop/Story (main)
+$ cd
+
+laura@Lauras-PC MINGW64 ~
+$ cd Desktop
+bash: cd: Desktop: No such file or directory
+
+laura@Lauras-PC MINGW64 ~
+$ cd
+
+laura@Lauras-PC MINGW64 ~
+$ cd
+
+laura@Lauras-PC MINGW64 ~
+$ cd
+
+laura@Lauras-PC MINGW64 ~
+$ cd ..
+
+laura@Lauras-PC MINGW64 /c/Users
+$ cd Desktop
+bash: cd: Desktop: No such file or directory
+
+laura@Lauras-PC MINGW64 /c/Users
+$ cd C:\Users\laura\OneDrive\Desktop
+bash: cd: C:UserslauraOneDriveDesktop: No such file or directory
+
+laura@Lauras-PC MINGW64 /c/Users
+$ cd Laura
+
+laura@Lauras-PC MINGW64 /c/Users/Laura
+$ cd OneDrive
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive
+$ cd Desktop
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop
+$ mkdir Project
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop
+$ cd Project
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project
+$ touch file1.txt
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project
+$ touch file2.txt
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project
+$ touch file3.txt
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project
+$ touch file4.txt
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project
+$ touch secrets.ttx
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project
+$ touch secrets.txt
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project
+$ rm secrets.ttx
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project
+$ ls
+file1.txt  file2.txt  file3.txt  file4.txt  secrets.txt
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project
+$ echo "secret passwords api keys etc etc \n etc" secrets.txt
+secret passwords api keys etc etc \n etc secrets.txt
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project
+$ echo "secret passwords api keys etc etc \n etc" >> secrets.txt
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project
+$ ls -a
+./  ../  file1.txt  file2.txt  file3.txt  file4.txt  secrets.txt
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project
+$ touch .gitignore
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project
+$ ls
+file1.txt  file2.txt  file3.txt  file4.txt  secrets.txt
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project
+$ ls -a
+./  ../  .gitignore  file1.txt  file2.txt  file3.txt  file4.txt  secrets.txt
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project
+$ open -a /Applications/Visual\ Studio\ Code.app .gitignore
+bash: open: command not found
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project
+$ start -a /Applications/Visual\ Studio\ Code.app .gitignore
+The system cannot find the file -a.
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project
+$ start /Applications/Visual\ Studio\ Code.app .gitignore
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project
+$ git init
+Initialized empty Git repository in C:/Users/laura/OneDrive/Desktop/Project/.git/
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project (master)
+$ git add .
+warning: in the working copy of 'secrets.txt', LF will be replaced by CRLF the next time Git touches it
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   file1.txt
+        new file:   file2.txt
+        new file:   file3.txt
+        new file:   file4.txt
+        new file:   secrets.txt
+
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project (master)
+$ git rm --cached -r .
+rm '.gitignore'
+rm 'file1.txt'
+rm 'file2.txt'
+rm 'file3.txt'
+rm 'file4.txt'
+rm 'secrets.txt'
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project (master)
+$ git add .
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   file1.txt
+        new file:   file2.txt
+        new file:   file3.txt
+        new file:   file4.txt
+
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project (master)
+$ git commit -m "Initial Commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'laura@Lauras-PC.(none)')
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project (master)
+$ git config --global user.email lauracain12345@gmail.com
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project (master)
+$ git config --global user.name laura
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project (master)
+$ git commit -m "Initial Commit"
+[master (root-commit) 06b9e3e] Initial Commit
+ 5 files changed, 2 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 file1.txt
+ create mode 100644 file2.txt
+ create mode 100644 file3.txt
+ create mode 100644 file4.txt
+
+laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project (master)
+$
