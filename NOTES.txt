@@ -399,3 +399,6 @@ $ git commit -m "Initial Commit"
 
 laura@Lauras-PC MINGW64 /c/Users/Laura/OneDrive/Desktop/Project (master)
 $
+
+git push origin main 
+to put onto github after committing
