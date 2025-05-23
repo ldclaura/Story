@@ -402,3 +402,84 @@ $
 
 git push origin main 
 to put onto github after committing
+
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Git Test
+$ touch .gitignore
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Git Test
+$ start code .gitignore
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Git Test
+$ code .gitignore
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Git Test
+$ code .gitignore
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Git Test
+$ git init
+Initialized empty Git repository in C:/Users/laura/OneDrive/Desktop/Git Test/.git/
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Git Test (master)
+$ git add .
+warning: in the working copy of 'main.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'requirements.txt', LF will be replaced by CRLF the next time Git touches it
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Git Test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   main.py
+        new file:   requirements.txt
+
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Git Test (master)
+$ git commit -m "initial commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'laura@Lauras-PC.(none)')
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Git Test (master)
+$ git config --global user.email lauracain12345@gmail.com
+error: could not lock config file C:/Users/laura/OneDrive/Desktop/Git Test/C/x3a/Users/laura/.gitconfig: No such file or directory
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Git Test (master)
+$ git config user.email lauracain12345@gmail.com
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Git Test (master)
+$ git config user.name Laura
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Git Test (master)
+$ git commit -m "initial commit"
+[master (root-commit) 37687ae] initial commit
+ 3 files changed, 204 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 main.py
+ create mode 100644 requirements.txt
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Git Test (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Git Test (master)
+$ ls
+main.py  requirements.txt
+(.venv) 
+laura@Lauras-PC MINGW64 /c/Users/laura/OneDrive/Desktop/Git Test (master)
+$
